@@ -1,5 +1,3 @@
-import lejos.hardware.motor.EV3LargeRegulatedMotor;
-import lejos.robotics.SampleProvider;
 
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 import lejos.robotics.SampleProvider;
