@@ -1,9 +1,4 @@
 
-<<<<<<< HEAD
-public class Navigation {
-
-=======
-
 
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 
@@ -144,5 +139,5 @@ public class Navigation {
 	private static int convertAngle(double radius, double width, double angle) {
 		return convertDistance(radius, Math.PI * width * angle / 360.0);
 	}
->>>>>>> origin/master
+
 }

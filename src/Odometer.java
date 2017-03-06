@@ -1,8 +1,5 @@
 
-<<<<<<< HEAD
-public class Odometer {
-//herer
-=======
+
 
 
 
@@ -170,5 +167,5 @@ public class Odometer implements TimerListener {
 		else
 			return d - 360.0;
 	}
->>>>>>> origin/master
+
 }

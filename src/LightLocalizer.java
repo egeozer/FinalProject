@@ -1,9 +1,5 @@
 
-<<<<<<< HEAD
-public class LightLocalizer {
 
-}
-=======
 
 
 import lejos.hardware.Sound;
@@ -99,6 +95,3 @@ public class LightLocalizer {
 		
 		
 	
-
-
->>>>>>> origin/master
