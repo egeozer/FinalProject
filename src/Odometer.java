@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 8c205efcc63da1d9df423b8a6056c5d0e7f96fc9
 import lejos.utility.Timer;
 import lejos.utility.TimerListener;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
@@ -162,5 +170,5 @@ public class Odometer implements TimerListener {
 		else
 			return d - 360.0;
 	}
->>>>>>> origin/master
+
 }
