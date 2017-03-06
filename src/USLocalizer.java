@@ -18,7 +18,7 @@ public class USLocalizer {
 	private double noiseDistFE = 0.0;			// experimentally determined noise margin (falling edge)
 	private double noiseDistRE = 2.0;			// experimentally determined noise margin (rising edge)
 	private double prevDist  = 0;
-	
+	//
 	public USLocalizer(Odometer odo, Navigation navi, SampleProvider usSensor, float[] usData, LocalizationType locType) {
 		this.odo = odo;
 		this.navi = navi;
