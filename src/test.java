@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-=======
 
-	
-
->>>>>>> 8c205efcc63da1d9df423b8a6056c5d0e7f96fc9
 	import lejos.hardware.*;
 	import lejos.hardware.ev3.LocalEV3;
 	import lejos.hardware.lcd.TextLCD;
