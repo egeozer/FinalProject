@@ -1,10 +1,4 @@
 
-<<<<<<< HEAD
-public class test {
-//hey
-=======
-
-	
 	
 
 	import lejos.hardware.*;
@@ -103,9 +97,3 @@ public class test {
 
 	
 
-<<<<<<< HEAD
->>>>>>> 1327d258097e19c558585864f9103dcd36295465
-}
-=======
-
->>>>>>> origin/master
