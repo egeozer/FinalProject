@@ -1,11 +1,3 @@
-
-<<<<<<< HEAD
-public class Odometer {
-//herer
-=======
-
-
-
 import lejos.utility.Timer;
 import lejos.utility.TimerListener;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;

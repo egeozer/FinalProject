@@ -1,11 +1,3 @@
-
-<<<<<<< HEAD
-public class LightLocalizer {
-
-}
-=======
-
-
 import lejos.hardware.Sound;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 import lejos.robotics.SampleProvider;
@@ -97,8 +89,3 @@ public class LightLocalizer {
 		
 }
 		
-		
-	
-
-
->>>>>>> origin/master

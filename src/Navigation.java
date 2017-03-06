@@ -1,10 +1,3 @@
-
-<<<<<<< HEAD
-public class Navigation {
-
-=======
-
-
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 
 public class Navigation {
