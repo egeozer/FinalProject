@@ -29,9 +29,11 @@ public class test {
 	static double leftRadius = 2.17;
 	static double rightRadius = 2.17;
 	static double trackWidth =  16.0;
+	static double lightSensorDist = 3.0; 		//distance from the wheel base to the light sensor
 	
 
 	
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		//Setup ultrasonic sensor
@@ -95,7 +97,7 @@ public class test {
 			buttonChoice = Button.waitForAnyPress();
 			if (buttonChoice == Button.ID_UP) {
 				LightLocalizer lsl = new LightLocalizer(odo, navi, colorValue, colorData);		
-				lsl.doLocalization(odo, navi, colorValue, colorData);
+				lsl.doLocalization(odo, navi, colorValue, colorData, lightSensorDist);
 				break;
 			}
 		}

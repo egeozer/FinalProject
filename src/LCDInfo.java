@@ -8,7 +8,7 @@ public class LCDInfo implements TimerListener{
 	public static final int LCD_REFRESH = 100;
 	private Odometer odo;
 	private Timer lcdTimer;
-	private TextLCD LCD = LocalEV3.get().getTextLCD();;
+	private TextLCD LCD = LocalEV3.get().getTextLCD();
 	
 	// arrays for displaying data
 	private double [] pos;
