@@ -25,7 +25,11 @@ public class test {
 	
 	//Constants
 	static int rotateSpeed = 200;
-	static float launchSpeed = leftLauncher.getMaxSpeed();
+	static double launchSpeed = leftLauncher.getMaxSpeed();
+	static double leftRadius = 2.17;
+	static double rightRadius = 2.17;
+	static double trackWidth =  16.0;
+	
 
 	
 	public static void main(String[] args) {
@@ -51,7 +55,7 @@ public class test {
 		float[] colorData = new float[colorValue.sampleSize()];			// colorData is the buffer in which data are returned
 				
 		// setup the odometer and display
-		Odometer odo = new Odometer(leftMotor, rightMotor, 30, true);
+		Odometer odo = new Odometer(leftMotor, rightMotor, 30, true, leftRadius, rightRadius, trackWidth);
 		Navigation navi = new Navigation(odo);
 		final TextLCD t = LocalEV3.get().getTextLCD();
 				
