@@ -1,5 +1,3 @@
-import lejos.hardware.motor.EV3LargeRegulatedMotor;
-import lejos.robotics.SampleProvider;
 
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 import lejos.robotics.SampleProvider;
@@ -15,10 +13,12 @@ public class USLocalizer {
 	private float[] usData;
 	private LocalizationType locType;
 	private double critDist = 45.0;				// measured distance from the wall
+	private double headingCorrectionFE = 0.0;	// experimentally determined heading correction for FALLING EDGE
+	private double headingCorrectionRE = -13.0;	// experimentally determined heading correction for RISING EDGE
 	private double noiseDistFE = 0.0;			// experimentally determined noise margin (falling edge)
 	private double noiseDistRE = 2.0;			// experimentally determined noise margin (rising edge)
 	private double prevDist  = 0;
-	//
+	
 	public USLocalizer(Odometer odo, Navigation navi, SampleProvider usSensor, float[] usData, LocalizationType locType) {
 		this.odo = odo;
 		this.navi = navi;
@@ -92,7 +92,7 @@ public class USLocalizer {
 			heading = deltaAngle + angleB;
 				
 			// update the odometer position
-			odo.setPosition(new double [] {0.0, 0.0, heading}, new boolean [] {true, true, true});
+			odo.setPosition(new double [] {0.0, 0.0, heading + headingCorrectionFE}, new boolean [] {true, true, true});
 			navi.turnTo(0, true);
 		}
 		// rising edge mode
@@ -149,7 +149,7 @@ public class USLocalizer {
 			heading = deltaAngle + angleA;
 			
 			// update the odometer position (example to follow:)
-			odo.setPosition(new double [] {0.0, 0.0, heading-13}, new boolean [] {true, true, true});
+			odo.setPosition(new double [] {0.0, 0.0, heading + headingCorrectionRE}, new boolean [] {true, true, true});
 			navi.turnTo(0, true);
 		}
 	}
